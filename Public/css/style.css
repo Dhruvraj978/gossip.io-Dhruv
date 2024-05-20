@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 32, 41);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.outer-box {
+    padding-top: 50px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(62, 80, 107);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.inner-box {
+    background-color: black;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.inputName,
+.inputRoom {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.form-control {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.chat-message {
+    background-color: slategray;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message.chat2 {
+    background-color: teal;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .outer-box {
+        width: 100%;
+        margin: 20px;
+    }
+    .inner-box {
+        padding: 20px;
+    }
+    .form-control {
+        width: calc(100% - 20px);
+    }
+    .btn {
+        width: 80%;
+    }
+}
