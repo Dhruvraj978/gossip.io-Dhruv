@@ -13,7 +13,7 @@ const io = socketio(server);
 const botName = 'Gossip.io';
 
 //set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
 //Run when client coonect
 io.on('connection', socket => {
